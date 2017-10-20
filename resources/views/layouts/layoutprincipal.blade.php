@@ -8,8 +8,8 @@
 
     <title>Formulario @yield('title') </title>
   </head>
-  <body>
-    <div class="header">
+
+    <div>
       @yield('header')
     </div>
 

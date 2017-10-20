@@ -17,6 +17,12 @@ class CreateAreasTable extends Migration
             $table->increments('id');
             $table->string('nombre_area');
             $table->timestamps();
+
+            $table->integer('obra_id')->unsigned();
+
+
+
+            $table->foreign('obra_id')->references('id')->on('obras');
         });
     }
 

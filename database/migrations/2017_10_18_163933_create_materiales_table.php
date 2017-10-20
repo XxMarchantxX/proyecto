@@ -14,15 +14,17 @@ class CreateMaterialesTable extends Migration
     public function up()
     {
         Schema::create('materiales', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nombre_material');
-            $table->integer('precio_constructora');
-            $table->integer('valor_maestro');
-            $table->integer('obra_id')->unsigned();
-            $table->timestamps();
+          $table->increments('id');
+          $table->string('nombre_material');
+          $table->integer('precio_constructora');
+          $table->integer('valor_maestro');
+          $table->string('tipo_medida');
+          $table->timestamps();
+
+          $table->integer('obra_id')->unsigned();
 
 
-            $table->foreing('obra_id')->references('id')->on('obras');
+          $table->foreign('obra_id')->references('id')->on('obras');
         });
     }
 

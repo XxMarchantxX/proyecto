@@ -14,7 +14,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    // 'name' => env('APP_NAME', 'Proyecto'),
+    'name'=>'Proyecto',
 
     /*
     |--------------------------------------------------------------------------
@@ -39,8 +40,8 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-
-    'debug' => env('APP_DEBUG', true),
+    
+    'debug' => true,
     //'debug' => env('APP_DEBUG'),
 
     /*

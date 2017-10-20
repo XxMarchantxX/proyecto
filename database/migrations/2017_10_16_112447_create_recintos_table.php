@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateObrasTable extends Migration
+class CreateRecintosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateObrasTable extends Migration
      */
     public function up()
     {
-        Schema::create('obras', function (Blueprint $table) {
+        Schema::create('recintos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre_constructora');
-            $table->string('nombre_obra');
-            $table->string('direccion');
-            $table->string('nombre_ingeniero');
-            $table->string('email');
-            $table->integer('telefono');
-
+            $table->string('nombre_recito');
             $table->timestamps();
+
+            $table->integer('area_id')->unsigned();
+
+
+            $table->foreign('area_id')->references('id')->on('areas');
         });
     }
 
@@ -33,6 +32,6 @@ class CreateObrasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('obras');
+        Schema::dropIfExists('recintos');
     }
 }
