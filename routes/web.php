@@ -21,7 +21,20 @@ Route::get('/', 'PagesController@index');
 // Route::get('nuevaobra',function(){
 //     return view('forms.nuevaobra')->with(['nombreObra'=>'talagante']);
 // });
-Route::get('nuevaobra','PagesController@nuevaobra');
+
+//Rutas relacionadas a las Obras
+
+  Route::get('nuevaobra','FormularioObraController@formuarioObra');
+  Route::get('obras','ObrasController@obras_existentes');
+  Route::get('obras/{id}','ObrasController@mostrar_obra' );
+
+
+
+  //Rutas relacionadas a las Areas
+  Route::get('areas', 'AreasController@areas_existentes');
+  Route::get('areas/{id}', 'AreasController@mostrar_area');
+
+
 
 Route::get('nuevotrabajador','PagesController@nuevotrabajador');
 

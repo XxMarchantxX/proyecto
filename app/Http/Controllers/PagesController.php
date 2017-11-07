@@ -13,15 +13,14 @@ class PagesController extends Controller
     }
 
 
-    public function nuevaobra()
-    {
-      return view('forms.nuevaobra')->with(['nombreObra'=>'talagante']);
-
-    }
+    // public function nuevaobra()
+    // {
+    //   return view('forms.nuevaobra')->with(['nombreObra'=>'talagante']);
+    //
+    // }
 
     public function nuevotrabajador()
     {
-      // return 'hfaijshfklasjhd';
       return view('forms.nuevotrabajador');
     }
 }
