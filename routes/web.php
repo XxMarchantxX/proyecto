@@ -24,8 +24,10 @@ Route::get('/', 'PagesController@index');
 
 //Rutas relacionadas a las Obras
 
-  Route::get('nuevaobra','FormularioObraController@formuarioObra');
+  // Route::get('nuevaobra','FormularioObraController@formuarioObra');
   Route::get('obras','ObrasController@obras_existentes');
+  // Route::get('obras/create','ObrasController@create'); Resolver conflico con la ruta de los {id}, dado que trata de buscar en al base de datos
+  Route::get('obras/create','ObrasController@create');
   Route::get('obras/{id}','ObrasController@mostrar_obra' );
 
 

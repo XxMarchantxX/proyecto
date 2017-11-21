@@ -31,9 +31,13 @@ class ObrasController extends Controller
 
 //-----------------------------------------------
 
-    public function registrar_obra()
+    // public function registrar_obra()
+    // {
+    //   return view('forms.nuevaobra');
+    //
+    // }
+    public function create()
     {
-      return view('forms.nuevaobra');
-
+      return view ('obras.create');
     }
 }
