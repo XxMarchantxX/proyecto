@@ -72,7 +72,32 @@
         </nav>
 
     </div>
-    @yield('content')
+
+
+    <div class="row">
+
+        <nav class="col-xs-2">
+          <ul class="nav nav-pills flex-column">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="http://127.0.0.1:8000/obras/">Obras Existentes <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="http://127.0.0.1:8000/obras/create">Registrar Obra <span class="sr-only">(current)</span></a>
+            </li>
+
+          </ul>
+        </nav>
+
+
+      <main role="main" class="col-xs-7">
+
+        @yield('content')
+
+        </main>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

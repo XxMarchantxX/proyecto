@@ -40,4 +40,9 @@ class ObrasController extends Controller
     {
       return view ('obras.create');
     }
+
+    public function store(Request $request)
+    {
+      dd($request->all());
+    }
 }

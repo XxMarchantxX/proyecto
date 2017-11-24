@@ -29,6 +29,7 @@ Route::get('/', 'PagesController@index');
   // Route::get('obras/create','ObrasController@create'); Resolver conflico con la ruta de los {id}, dado que trata de buscar en al base de datos
   Route::get('obras/create','ObrasController@create');
   Route::get('obras/{id}','ObrasController@mostrar_obra' );
+  Route::post('obras', 'ObrasController@store');
 
 
 
