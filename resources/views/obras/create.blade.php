@@ -51,10 +51,24 @@
                 <input type="text" class="form-control" name="telefono" placeholder="Telefono de contacto para le Ingeniero a cargo" value="{{old('telefono')}}">
               </div>
 
-             <button type="submit" class="btn btn-default">Guardar</button>
-            </form>
+             {{-- <button type="submit" class="btn btn-default">Guardar</button> --}}
 
-        </div>
+
+
+             <script>
+
+             function cambia_de_pagina(){
+                 location.href="http://127.0.0.1:8000/obras/"
+             }
+             </script>
+             
+            <button type="submit" class="btn btn-primary btn-lg active">Guardar y Seguir</button>
+
+            <input type="button" class="btn btn-default btn-lg active" onclick="javascript:cambia_de_pagina();" value="Cancelar" />
+
+
+           </form>
+          </div>
       </div>
 
 @endsection

@@ -40,7 +40,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-    
+
     'debug' => true,
     //'debug' => env('APP_DEBUG'),
 
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -180,6 +180,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // language Providers
+        Laraveles\Spanish\SpanishServiceProvider::class,
     ],
 
     /*

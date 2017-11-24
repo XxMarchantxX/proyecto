@@ -62,9 +62,6 @@ class ObrasController extends Controller
       //   'nombre_ingeniero'=>'required',
       //   'email'=>'required',
       //   'telefono' =>'required|integer'
-      //
-      //
-      //
       // ]);
 
 
