@@ -87,6 +87,12 @@
               <a class="nav-link active" href="http://127.0.0.1:8000/obras/create">Registrar Obra <span class="sr-only">(current)</span></a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link active" href="http://127.0.0.1:8000/materiales/create">Definir materiales <span class="sr-only">(current)</span></a>
+            </li>
+
+            
+
           </ul>
         </nav>
 

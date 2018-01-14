@@ -2,7 +2,6 @@
 
 @section('content')
 
-            <h1>Crear Obra</h1>
 
             <form  action="/obras" method="POST" role="form">
 
@@ -61,11 +60,23 @@
                  location.href="http://127.0.0.1:8000/obras/"
              }
              </script>
-             
-            <button type="submit" class="btn btn-primary btn-lg active">Guardar y Seguir</button>
 
-            <input type="button" class="btn btn-default btn-lg active" onclick="javascript:cambia_de_pagina();" value="Cancelar" />
+             {{-- <div class="row">
 
+                <div class="col-4">
+                 <button type="submit" class="btn btn-primary  active">Guardar y Seguir</button>
+               </div>
+
+               <div class="col-4">
+                 <input type="button" class="btn btn-default  active " onclick="javascript:cambia_de_pagina();" value="Cancelar">
+               </div>
+
+           </div> --}}
+           <div class="row">
+                <div class="col-md-9"><button type="submit" class="btn btn-primary  active">Guardar y Seguir</button></div>
+                <div class="col-md-1"><input type="button" class="btn btn-default  active " onclick="javascript:cambia_de_pagina();" value="Cancelar"></div>
+
+            </div>
 
            </form>
           </div>

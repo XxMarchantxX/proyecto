@@ -32,6 +32,11 @@ Route::get('/', 'PagesController@index');
   Route::post('obras', 'ObrasController@store');
 
 
+  //Rutas relacionadas con los materiales
+  Route::get('materiales/create','MaterialesController@create');
+  Route::post('materiales','MaterialesController@store');
+
+
 
   //Rutas relacionadas a las Areas
   Route::get('areas', 'AreasController@areas_existentes');
@@ -43,6 +48,10 @@ Route::get('nuevotrabajador','PagesController@nuevotrabajador');
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
